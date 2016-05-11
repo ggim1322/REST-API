@@ -1,0 +1,13 @@
+extends layout
+
+block content
+  h1= title
+  p Welcome to #{title}
+  p This is a website which can say you Hi based on your name.
+    form.form-inline
+      div.form-group
+      input#input.form-control(placeholder="Enter your name here" type="text" minlength=4)
+      button#sendTough.btn.btn-default Send
+    br
+    p#story.lead #{message}
+  div.footer
